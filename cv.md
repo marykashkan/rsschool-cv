@@ -19,6 +19,6 @@ function multiply(a, b){
 }
 ```
 6. **Languages**
-    - Russian - native speaker.
-    - English - A1
-    - Polish - Basic
+    - Russian - native speaker
+    - English - B1
+    - Polish - A1
