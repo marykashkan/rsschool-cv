@@ -1,104 +1,230 @@
-html {
-    scroll-behavior: smooth; 
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
-.nav {
-    background-color:#fbf7d4;
-    opacity: 0.9;
-    padding: 1px;
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.nav-list {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
+:focus,
+:active {
+  outline: none;
 }
 
-.nav-link {
-    padding: 0 14px;
+a:focus,
+a:active {
+  outline: none;
 }
 
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
+nav,
+footer,
+header,
+aside {
+  display: block;
 }
 
-.main-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-  
-.section {
-    width: 50%;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 100%;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
-@media (max-width: 768px) {
-    .section {
-      width: 100%;
-    }
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.4;
-    color: #505050;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 700;
+  margin: 35px auto 18px auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  background-color: #77a05d;
+  opacity: 0.9;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  line-height: 40px;
+}
+
+.nav-link {
+  padding: 0 14px;
+}
+
+.nav-item:hover {
+  background-color: #fbf7d4;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.main__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 30px 0px;
+}
+
+p {
+  text-align: justify;
+  text-indent: 1%;
+  padding-bottom: 5px;
+}
+
+span {
+  font-style: italic;
+}
+
+.section {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
 }
 
 .section-title {
-    font-size: 22px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    color: #08080a;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #08080a;
+}
+
+.section__photo {
+  align-self: center;
 }
 
 .section-name {
-    font-size: 30px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    color: #08080a;
-    margin-top: 115px;
-    font-family: cursive;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #08080a;
+  font-family: cursive;
+  margin: 0px;
+}
+
+.section__name {
+  align-self: center;
 }
 
 .img-me {
-    width: 200px;
-    height: 200px;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
 }
 
 .img-rs {
-    width: 80px;
-    height: 30px;
+  width: 80px;
+  height: 30px;
 }
 
 .footer {
-    background-color:#fbf7d4;
-    opacity: 0.9;
-    margin: 0;
-    padding: 0;
+  background-color: #77a05d;
+  opacity: 0.9;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-container {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: flex-end;
 }
 
 .code {
-    background-color:#fbf7d4;
-    opacity: 0.9;
+  background: rgb(251, 247, 212, 0.5);
+  color: black;
 }
 
 a {
-    color: #08080a;
-    text-decoration: none;
+  color: #08080a;
+  text-decoration: none;
 }
 
 .h2-none {
-    visibility: hidden;
-    margin: 0;
+  display: none;
+  margin: 0;
 }
